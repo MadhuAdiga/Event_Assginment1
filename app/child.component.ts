@@ -14,7 +14,7 @@ export class ChildComponent {
     @Input() childData:string;//Received data from parent component
     @Output() eventData = new EventEmitter();//Emits data to parent
 
-    onChange(value:any){
+    onChange(value:any){//On changes to the input in child
         this.eventData.emit(value);//On input text, emit value to parent
     }
 }
